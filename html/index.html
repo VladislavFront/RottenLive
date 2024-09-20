@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Rotten Live</title>
+
+  <link rel="stylesheet" href="../css/main.css">
+
+</head>
+<body>
+
+  <!-- Меню паузы -->
+
+  <div class="pauseMenu">
+    <div class="pauseMenuSub-container">
+      <div class="pauseMenu-text-ontainer">
+        <h1 class="pauseText"> Пауза </h1>
+      </div>
+      <div class="pauseMenu-play">
+        <button class="pauseMenuClose" onclick="pauseMenuClose()"> <img src="../img/pause.png" alt="" width="30px" height="30px"> </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Меню с информацией и кнопкой паузы -->
+
+  <div class="menu">
+    <div class="count-container">
+      <h1 class="countBullet">  Патрон: 5  </h1>   
+      <h1 class="countKill">  Убито: 0 </h1>
+    </div>
+    <div class="pause-container">
+      <button class="pauseMenuOpen" onclick="pauseMenuOpen()"> <img src="../img/pause.png" alt="" width="30px" height="30px"> </button>
+    </div>
+  </div>
+  
+  <!-- Игровое поле -->
+  
+  <div class="game-scene">
+    <div class="zombi zombi1"> <img src="../img/zombi.png" alt="" width="100px"> </div>
+    <div class="zombi zombi2"> <img src="../img/zombi.png" alt="" width="100px"> </div>
+    <div class="player"> 
+      <img src="../img/player.png" alt="" width="150px"> 
+      <img src="../img/bullet.png" alt="" width="30px" class="bullet bullet1"> 
+    </div>
+  </div>
+
+  <!-- Поле с кнопками передвижения -->
+
+  <div class="navigation-container">
+    <div class="btn-container">
+      <div class="subBtn-navigation-container"> 
+        <button class="btn-navigation btnW">W</button> 
+      </div>
+      <div class="subBtn-navigation-container">      
+        <button class="btn-navigation btnA">A</button>
+        <button class="btn-navigation btnS">S</button>
+        <button class="btn-navigation btnD">D</button>
+      </div>
+    </div>
+
+    <!-- Поле с кнопками атаки и перезарядки -->
+    
+    <div class="subBtn-container">
+      <button class="btn-atak gunBtn">A</button>
+      <button class="btn-recharge gunBtn">R</button>
+    </div>
+  </div>
+  
+  <script src="../js/app.js"></script>
+</body>
+</html>
